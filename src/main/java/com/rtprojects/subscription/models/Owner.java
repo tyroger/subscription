@@ -34,13 +34,17 @@ public class Owner {
 
 
 	/**
-	 * to be used for registration
+	 * to be used for a new owner
 	 * @param firstname
 	 * @param password
 	 * @param email
 	 */
 	public Owner(String firstname, String password, String email) {
 		super();
+		this.id = -1;
+		setFirstname(firstname);
+		setPassword(password);
+		setEmail(email);
 	}
 
 
@@ -53,9 +57,13 @@ public class Owner {
 	 */
 	public Owner(Integer id, String firstname, String password, String email) {
 		super();
+		setId(id);
+		setFirstname(firstname);
+		setPassword(password);
+		setEmail(email);
 	}
 
-	/*setter and getter*/
+	/*getter and setter*/
 
 	public Integer getId() {
 		return id;
