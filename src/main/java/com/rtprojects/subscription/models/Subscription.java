@@ -1,7 +1,7 @@
 package com.rtprojects.subscription.models;
 
 /**
- * this class refers to a subscription.
+ * this class refers to a subscription that belongs to an owner.
  * Used to create a new subscription or to manage an existing one
  * @author tyroger
  *
@@ -17,6 +17,9 @@ public class Subscription {
 	private Supplier supplier;
 	private ContractDuration contractDuration;
 	private PaymentFrequency paymentFrequency;
+	
+	
+	//TODO : Ajouter une date de début et une date de fin
 	
 	
 	/*constructors*/
@@ -48,8 +51,10 @@ public class Subscription {
 		setCategory(category);
 		setSupplier(supplier);
 		setContractDuration(contractDuration);
-		setPaymentFrequency(paymentFrequency);	
+		setPaymentFrequency(paymentFrequency);
 	}
+	
+
 	
 	/**
 	 * used to manage an existing subscription

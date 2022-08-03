@@ -1,5 +1,9 @@
 package com.rtprojects.subscription.models;
 
-public class ContractDuration {
-
+public enum ContractDuration {
+	FREE,
+	WEEKLY,
+	MONTHLY,
+	QUATERLY,
+	ANNUALLY;
 }
